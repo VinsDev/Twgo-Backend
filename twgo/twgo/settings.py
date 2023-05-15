@@ -73,6 +73,7 @@ TEMPLATES = [
 WSGI_APPLICATION = 'twgo.wsgi.application'
 
 
+"""
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
@@ -81,6 +82,14 @@ DATABASES = {
         'PASSWORD': 'Vins@46185',
         'HOST': 'localhost',
         'PORT': '3306'
+    }
+}
+"""
+
+DATABASES = {
+    "default": {
+        "ENGINE": "django.db.backends.sqlite3",
+        "NAME": BASE_DIR / "helpbuddydb.db",
     }
 }
 
